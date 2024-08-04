@@ -3,7 +3,7 @@ module.exports = {
   content: ["./src/*.{html,js}"],
   theme: {
     fontFamily: {
-      'nav-title': ['"Dancing Script"', 'cursive']
+      'nav-title': ['"Dancing Script"']
     },
     extend: {},
   },
