@@ -7,23 +7,35 @@
 }
 @layer components {
   header {
-    @apply bg-slate-100
+    @apply bg-slate-100;
   }
   nav {
     @apply py-4 px-4 bg-slate-100 flex lg:flex-col items-center md:justify-start lg:justify-center justify-center gap-4 select-none;
   }
   nav > .nav-menu {
-    @apply text-slate-500 hidden sm:flex flex-grow md:flex-grow-0 justify-end items-center gap-6
+    @apply text-slate-500 hidden sm:flex flex-grow md:flex-grow-0 justify-end items-center gap-6;
   }
-  
-  .nav-menu > li{
-    @apply hover:text-slate-700 cursor-pointer flex items-center gap-1.5
+
+  .nav-menu > li {
+    @apply hover:text-slate-700 cursor-pointer flex items-center gap-1.5;
   }
-  nav > h1,
+  .title-headding,
   button > svg {
     @apply text-slate-600;
   }
-  nav > h1 {
+  .title-headding {
     @apply lg:text-4xl text-2xl sm:text-3xl font-nav-title inline-block sm:flex-grow-0 flex-grow text-start sm:text-start;
+  }
+
+  nav > .side-menu-bg {
+    @apply flex justify-end items-center bg-black/50 h-screen w-screen top-0 left-0 z-50 absolute;
+  }
+  nav > .side-menu-bg > .side-menu {
+    @apply w-10/12 h-full bg-slate-50 select-none rounded-s-2xl
+    /*
+    TODO: Complete styles for side menu
+        - flex column display 
+        - paddings
+    */
   }
 }
