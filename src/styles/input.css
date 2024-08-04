@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+}
+@layer components {
+  nav {
+    @apply py-3 px-1 bg-slate-300;
+  }
+  nav > h1 {
+    @apply text-slate-600 font-nav-title;
+  }
+}
